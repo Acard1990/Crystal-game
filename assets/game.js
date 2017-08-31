@@ -34,7 +34,7 @@ var resetAndStart = function() {
     var crystal = $("<div>");
 
     crystal.attr({
-      "class": 'crystal',
+      "class": 'crystal transform',
       "data-random": random
     });
 
@@ -56,12 +56,14 @@ var resetAndStart = function() {
 resetAndStart();
 
 
-// Event Delegation
+
 $(document).on('click', ".crystal", function() {
 
   var num = parseInt($(this).attr('data-random'));
 
   previous += num;
+
+  $('.transform').toggleClass('transform-active');
 
 
   $("#previous").html("Total score: " + previous);

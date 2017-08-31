@@ -13,19 +13,34 @@ body {
   border: 5px solid grey;
   height: 200px;
   width: 200px;
-
+  transform: rotateX(35deg);
 }
 
-.crystal:hover{
-	box-shadow: 15px 15px 15px rgba(0, 0, 0, 0.5);
-	transform: translate(5px,20px);
-	cursor: pointer;
-	transition: box-shadow 1s, transform 2s;
+.crystal:hover {
+  box-shadow: 15px 15px 15px rgba(0, 0, 0, 0.9);
+  transform: translate(5px, 20px);
+  cursor: pointer;
+  transition: box-shadow 1s, transform 2s;
   transform: scale(1.2);
-
-
 }
 
-img{
-	width:50px;
+img {
+  width: 50px;
+}
+
+#win {
+  color: green;
+  font-style: oblique;
+}
+
+.transform {
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
+.transform-active {
+  transform: rotateY(180deg);
 }
