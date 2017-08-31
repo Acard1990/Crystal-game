@@ -56,15 +56,16 @@ var resetAndStart = function() {
 resetAndStart();
 
 
-
 $(document).on('click', ".crystal", function() {
+
+  $('.transform').toggleClass('transform-active');
+  //still working on the .transform-reset.  Not sure
+  //if I should create a loop that only runs once or
+  //possibly do a conditional statement for the effect.
 
   var num = parseInt($(this).attr('data-random'));
 
   previous += num;
-
-  $('.transform').toggleClass('transform-active');
-
 
   $("#previous").html("Total score: " + previous);
 
@@ -83,6 +84,8 @@ $(document).on('click', ".crystal", function() {
   } else if (previous === random_result) {
 
     win++;
+    //still working on this congratulatory spin
+    //$('.transform').toggleClass('winning-spin');
 
     $("#win").html("You win: " + win);
 
