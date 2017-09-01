@@ -1,11 +1,14 @@
+
+
 body {
-  background: #333;
-  color: #888;
+  background: linear-gradient(to left, #403B4A, #E7E9BB);
+  color: black;
   font-family: 'Orbitron', sans-serif;
+  height: 1000px;
 }
 
 #result, #previous, #win, #losses {
-  margin-left: 35%;
+  margin-left: 20%;
 }
 
 .crystals {
@@ -16,14 +19,14 @@ body {
 }
 
 .crystal {
-  border: 5px solid grey;
+  border: 1px solid #black;
   height: 200px;
   width: 200px;
   transform: rotateX(45deg);
 }
 
 .crystal:hover {
-  box-shadow: 15px 15px 15px rgba(0, 0, 0, 0.9);
+  box-shadow: 15px 20px 20px rgba(0, 0, 0, 0.9);
   transform: translate(5px, 20px);
   cursor: pointer;
   transition: box-shadow 1s, transform 2s;
@@ -57,6 +60,7 @@ p {
   transform: rotateX(45deg);
 }
 
-.winning-spin {
+
+/*.winning-spin {
   transform: skewX()(180deg);
 }

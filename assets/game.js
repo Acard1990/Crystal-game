@@ -18,14 +18,14 @@ var resetAndStart = function() {
   var images = [
     'http://www.totpi.com/wp-content/uploads/2016/11/0202121-21-1500x840.jpg',
     'http://www.tiffany.com/shared/images/engagement/uv-dark-mobile.png',
-    'http://media.istockphoto.com/photos/crystal-on-white-picture-id174289783',
+    'http://channelingerik.com/wp-content/uploads/2015/12/Crystal-Fantasy-Wallpaper-Desktop.jpg',
     'http://wlpapers.com/images/beautiful-colors-1.jpg'
   ];
 
   random_result = Math.floor(Math.random() * 69) + 30;
 
 
-  $("#result").html('Random Result: ' + random_result);
+  $("#result").html('Good luck: ' + random_result);
 
   for (var i = 0; i < 4; i++) {
 
